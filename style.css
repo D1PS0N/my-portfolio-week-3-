@@ -33,6 +33,7 @@ h2,
 h3,
 .logo {
   font-family: Georgia, serif;
+  font-variant-numeric: lining-nums;
 }
 
 h2 {
