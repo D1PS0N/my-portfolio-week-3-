@@ -1,13 +1,14 @@
+/* 1. Palette and fonts */
 :root {
-  --ink: #222222;       /* main text */
-  --muted: #555555;     /* secondary text */
-  --bg: #f4f2ed;       /* page background */
-  --card: #ffffff;      /* header and cards */
-  --accent: #1f5f4a;    /* links and highlights */
-  --line: #dcd8cf;      /* borders */
+  --ink: #222222;
+  --muted: #555555;
+  --bg: #f4f2ed;
+  --card: #ffffff;
+  --accent: #1f5f4a;
+  --line: #dcd8cf;
 }
 
-
+/* 2. Reset: removes browser-default spacing */
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +21,7 @@ img {
   height: auto;
 }
 
-
+/* 3. Typography */
 body {
   font: 1rem/1.6 "Segoe UI", Arial, sans-serif;
   color: var(--ink);
@@ -55,14 +56,10 @@ a {
   color: inherit;
 }
 
-
-
-/* Centred content column */
+/* 4. Layout: full-width content area */
 .box {
-  width: 100%;
-  max-width: none;
-  margin: 0;
-  padding: 2rem 2rem 0;
+  margin: auto;
+  padding: 2rem 5% 0;
 }
 
 /* Flexbox: header, navigation and About */
@@ -91,7 +88,7 @@ nav,
   gap: 1.25rem;
 }
 
-
+/* 5. Components */
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
@@ -117,9 +114,7 @@ footer {
   border-top: 1px solid var(--line);
 }
 
-
-
-/* Tablet and mobile */
+/* 6. Media query: tablet and mobile */
 @media (max-width: 768px) {
   .bar,
   .about {
@@ -129,7 +124,7 @@ footer {
   }
 }
 
-/* Small phones */
+/* 6. Media query: small phones */
 @media (max-width: 480px) {
   body {
     font-size: 0.95rem;
