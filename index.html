@@ -12,73 +12,84 @@
 
 <body>
 
-  <!-- Header: logo and navigation -->
+  <!-- Header: name, subtitle and navigation -->
   <header>
-    <a class="logo" href="#top">Dipson Dahal</a>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="box bar">
+      <div>
+        <h1 class="logo"><a href="#about">Dipson Dahal</a></h1>
+        <p>BIT Student &amp; Aspiring Web Developer</p>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <main>
 
-    <!-- Hero: introduction and profile photo -->
-    <section class="hero" id="top">
-      <div>
-        <h1>I build clear, accessible websites.</h1>
-        <p>Hi, I'm Dipson Dahal, a BIT student learning front-end development.</p>
+    <!-- About: photo beside text -->
+    <section class="box" id="about">
+      <h2>About Me</h2>
+      <div class="about">
+        <img src="images/Profile.jpeg" alt="Portrait of Dipson Dahal" width="140" height="140">
+        <p>
+          I study Bachelor of Information Technology (BIT) at Model Institute of Technology
+          and enjoy building user-friendly websites and web applications. I am passionate about learning new technologies and improving my skills in web development.
+        </p>
       </div>
-      <img src="images/Profile.jpeg" alt="Portrait of Dipson Dahal" width="200" height="200">
     </section>
 
-    <!-- About -->
-    <section id="about">
-      <h2>About me</h2>
-      <p>
-        I study Bachelor of Information Technology (BIT) at Model Institute of Technology.
-        I am learning front-end development and web design. I have a passion for creating
-        user-friendly and visually appealing websites. My goal is to continuously improve
-        my skills and contribute to the web development community.
-      </p>
+    <!-- Skills -->
+    <section class="box" id="skills">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div>
+          <h3>HTML5</h3>
+          <p>Semantic structure.</p>
+        </div>
+        <div>
+          <h3>CSS3</h3>
+          <p>Flexbox, Grid, media queries.</p>
+        </div>
+        <div>
+          <h3>Git &amp; GitHub</h3>
+          <p>Version control and Pages.</p>
+        </div>
+      </div>
     </section>
 
-    <!-- Projects: displayed in a responsive CSS Grid -->
-    <section id="projects">
+    <!-- Projects -->
+    <section class="box" id="projects">
       <h2>Projects</h2>
       <div class="grid">
-
         <article>
           <h3>Personal Portfolio</h3>
-          <p>Responsive site built with HTML and CSS.</p>
+          <p>Responsive HTML and CSS site.</p>
         </article>
-
         <article>
           <h3>Semantic HTML Page</h3>
-          <p>My first page using HTML5 elements.</p>
+          <p>My first HTML5 page.</p>
         </article>
-
         <article>
           <h3>Git and GitHub</h3>
-          <p>Version control and GitHub Pages deployment.</p>
+          <p>Deployed with GitHub Pages.</p>
         </article>
-
       </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact">
+    <section class="box" id="contact">
       <h2>Contact</h2>
-      <p><a href="mailto:dipsondahal001@gmail.com">dipsondahal001@gmail.com</a></p>
+      <a href="mailto:dipsondahal001@gmail.com">dipsondahal001@gmail.com</a>
     </section>
 
   </main>
 
   <!-- Footer -->
-  <footer>
-    <p>Thank you for visiting my portfolio!</p>
-  </footer>
+  <footer>Thank you for visiting my portfolio!</footer>
 
 </body>
 
